@@ -4,44 +4,52 @@
 <body><main>
 <a class="back" href="../">&larr; Back to artLocker</a>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: 20 November 2026</p>
-<p>This policy explains how artLocker handles your information. The short version: your collection stays on your iPhone, and the developer of artLocker never sees it. Only anonymous subscription information is shared with Apple and RevenueCat to manage Pro.</p>
+<p class="meta">Last updated: 23 November 2026</p>
+<p>This policy explains how artLocker handles your information. The short version: your collection stays on your device (iPhone or Android phone), and the developer of artLocker never sees it. Only anonymous subscription information is shared with RevenueCat (and processed by Apple or Google Play) to manage Pro. This policy covers artLocker for iPhone (iOS) and for Android; parts that differ by platform are labelled.</p>
 <h2>What the app stores</h2>
 <p>artLocker is a catalogue for your art collection. Depending on what you choose to add, it can hold artworks, photos, documents such as invoices, certificates and insurance papers, values, provenance, condition reports and insurance policy details.</p>
 <h2>Where your data lives</h2>
-<p>All of this data is stored only on your device, inside the app's sandbox. There is no account and there is no server. The app never sends your collection to any server. The developer of artLocker cannot see, access or recover your data.</p>
+<p>All of this data is stored only on your device, inside the app's private storage (the app sandbox on iOS, app-private storage on Android). There is no account and there is no server. The app never sends your collection to any server. The developer of artLocker cannot see, access or recover your data.</p>
 <h2>What the developer collects</h2>
 <p>Nothing about your collection or you. The developer of artLocker does not receive your artworks, photos, documents, values or insurance details. Specifically:</p>
 <ul>
 <li>no analytics</li>
 <li>no ads</li>
 <li>no tracking</li>
-<li>no third-party SDKs for analytics, advertising or tracking (the only third-party SDK that connects to the internet is RevenueCat, for subscriptions, described below)</li>
+<li>no advertising ID (neither the iOS IDFA nor the Android advertising ID is used)</li>
+<li>no third-party SDKs for analytics, advertising or tracking (the only third-party SDK that connects to the internet is RevenueCat, for subscriptions, described below; on Android, the document scanner also uses Google's ML Kit, described below)</li>
 <li>no crash reporting service</li>
 </ul>
-<p>If you have opted in to share diagnostics with app developers in iOS settings, Apple controls that data and its handling. The developer of artLocker does not run a service for it.</p>
+<p>If you have opted in to share diagnostics with app developers in iOS or Android settings, Apple or Google controls that data and its handling. The developer of artLocker does not run a service for it.</p>
 <h2>Device permissions</h2>
 <ul>
-<li><strong>Camera and photo library:</strong> used only to add photos or scans that you choose. They stay on your device.</li>
-<li><strong>Face ID or device passcode:</strong> iOS (LocalAuthentication) handles this to unlock the in-app Vault. The app never receives your biometric data.</li>
-<li><strong>Local notifications:</strong> optional, used for reminders such as insurance renewal and loan returns. They are scheduled on your device.</li>
+<li><strong>Camera and photo library (photo picker on Android):</strong> used only to add photos or scans that you choose. They stay on your device.</li>
+<li><strong>iPhone: Face ID or device passcode:</strong> iOS (LocalAuthentication) handles this to unlock the in-app Vault. The app never receives your biometric data.</li>
+<li><strong>Android: fingerprint, face unlock or screen lock:</strong> Android's biometric prompt handles this to unlock the in-app Vault. The app never receives your biometric data.</li>
+<li><strong>Local notifications:</strong> optional, used for reminders such as insurance renewal and loan returns. They are scheduled on your device (on Android you may be asked for notification permission).</li>
 </ul>
+<h2>Document scanner (Android)</h2>
+<p>On Android, the document scanner uses Google's <strong>ML Kit Document Scanner</strong> through Google Play services. Scanning happens on your device, and the scanned images are not sent to the developer. Only when you use the scanner, Google's ML Kit may send Google usage diagnostics: device model, OS and app version, a per-installation identifier, and performance and error data (not your scanned images). See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a>. This is declared in the app's Google Play Data safety form as Diagnostics and Device or other IDs (analytics). On iPhone the scanner is part of iOS.</p>
 <h2>Backups and exports</h2>
 <p>You can export a backup file, a CSV, or an insurance PDF and share it wherever you choose, for example Files, AirDrop or Mail. These files go only where you send them with the iOS share sheet. Once you share a file, that copy is your responsibility and is governed by the privacy practices of the destination service.</p>
-<p>Separately, your iPhone's own iCloud or computer backup may include artLocker's data, as it does for most apps. That backup is made by iOS and is controlled by Apple, not by the app or the developer. If you prefer to exclude artLocker from it, turn off "Include in iPhone backup" in the app's Settings, and keep your own backup files instead.</p>
+<h3>iPhone</h3>
+<p>Your iPhone's own iCloud or computer backup may include artLocker's data, as it does for most apps. That backup is made by iOS and is controlled by Apple, not by the app or the developer. If you prefer to exclude artLocker from it, turn off "Include in iPhone backup" in the app's Settings, and keep your own backup files instead.</p>
+<h3>Android</h3>
+<p>artLocker's data is excluded from Google Drive cloud backup, so the system does not upload it to your Google account. It is included when you transfer data directly from one phone to another with Android's device-to-device transfer. The <code>.artbackup</code> file you create in Settings is your own copy outside the device; where you keep it is up to you.</p>
 <h2>Subscriptions and purchases</h2>
-<p>artLocker offers an optional auto-renewable subscription, artLocker Pro, billed monthly or yearly, with a one-week free trial for new subscribers. Apple processes all payments, and the developer never receives your payment details. To manage subscription status, the app uses <strong>RevenueCat, Inc.</strong> (<a href="https://www.revenuecat.com/privacy">privacy policy</a>). RevenueCat receives:</p>
+<p>artLocker offers an optional auto-renewable subscription, artLocker Pro, billed monthly or yearly, with a one-week free trial for new subscribers. On iPhone, Apple processes all payments; on Android, Google Play does. The developer never receives your payment details. On both platforms, to manage subscription status the app uses <strong>RevenueCat, Inc.</strong> (<a href="https://www.revenuecat.com/privacy">privacy policy</a>). RevenueCat receives:</p>
 <ul>
 <li>a random anonymous app user ID generated on your device (no name, email or account)</li>
-<li>purchase and transaction information from the App Store (product, price, currency, dates, trial and renewal status)</li>
+<li>purchase and transaction information from the App Store or Google Play (product, price, currency, dates, trial and renewal status)</li>
 <li>basic device and app information (device model, OS version, app version, locale/country, and IP address as part of normal network requests)</li>
 </ul>
-<p>This is purchase history only. It is not linked to your identity, it is used only to unlock Pro, to restore purchases, and for aggregate subscription analytics, for example trial conversion rates. It is not used for advertising, there is no tracking across apps, and the app does not use the IDFA. Your art collection data is never sent to RevenueCat.</p>
+<p>This is purchase history only. It is not linked to your identity, it is used only to unlock Pro, to restore purchases, and for aggregate subscription analytics, for example trial conversion rates. It is not used for advertising, there is no tracking across apps, and the app does not use the IDFA or the Android advertising ID. On Android this is declared in the Google Play Data safety form as Purchase history (app functionality, analytics). Your art collection data is never sent to RevenueCat.</p>
 <p>The free version includes 1 artwork, 1 photo, 1 document of each type, 1 insurance policy, 1 curated collection and 1 series.</p>
 <h2>Children</h2>
 <p>artLocker is not directed at children under 13.</p>
 <h2>Deleting your data</h2>
-<p>You can delete your data by deleting the app. Because the developer holds no copy, this removes it completely from the app. Copies you exported or shared elsewhere, and any copy in your own iPhone backup, must be deleted separately.</p>
+<p>artLocker has no account, so there is nothing to delete on a server. To delete your data (iPhone or Android), delete the app <strong>artLocker</strong>: uninstalling it removes all your collection data from the device. On Android: Settings &rarr; Apps &rarr; artLocker &rarr; Uninstall (or touch and hold the app icon and choose Uninstall). Copies you exported or shared elsewhere, <code>.artbackup</code> files, and any copy in your own iPhone or phone-to-phone backup must be deleted separately.</p>
+<p>The only data held outside your device is the anonymous subscription record at RevenueCat (random app user ID and purchase history, no name or email). To have it deleted, email <a href="mailto:linus@fitzapapps.com">linus@fitzapapps.com</a> from any address with the subject "artLocker data deletion" and, if you can, the anonymous app user ID shown in the app's Settings (if it is not shown, say so and we will help). We will request deletion of the record from RevenueCat.</p>
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
 <h2>Contact</h2>
